@@ -15,9 +15,9 @@ graph TD
     A[General Web Search Agent] --> B[Aggregator Agent]
     B --> C[Drafting Loop]
     C --> D[Writer Agent]
-    C --> E[Style Review Agent]
-    C --> F[Revision Agent]
-    C -->|Max Iterations: 2| C
+    D --> E[Style Review Agent]
+    E --> F[Revision Agent]
+    F -->|Max Iterations: 2| C
     C --> G[Formatter Agent]
 ```
 
